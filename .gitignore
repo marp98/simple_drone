@@ -1,0 +1,12 @@
+# pixi environments
+.pixi
+*.egg-info
+
+# build and install directories
+build/
+install/
+
+# log files
+log/
+*.log
+
