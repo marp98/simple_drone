@@ -445,6 +445,7 @@ environments:
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gazebo-msgs-3.7.0-py311hbfa132e_5.tar.bz2
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gazebo-plugins-3.7.0-py311hbfa132e_5.tar.bz2
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gazebo-ros-3.7.0-py311hbfa132e_5.tar.bz2
+      - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gazebo-ros-pkgs-3.7.0-py311hbfa132e_5.tar.bz2
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-geometry-msgs-4.2.3-py311hbfa132e_5.tar.bz2
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-geometry2-0.25.5-py311hbfa132e_5.tar.bz2
       - conda: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gmock-vendor-1.10.9004-py311hbfa132e_5.tar.bz2
@@ -9103,6 +9104,32 @@ packages:
   license: BSD-3-Clause
   size: 612904
   timestamp: 1707996366687
+- kind: conda
+  name: ros-humble-gazebo-ros-pkgs
+  version: 3.7.0
+  build: py311hbfa132e_5
+  build_number: 5
+  subdir: osx-arm64
+  url: https://conda.anaconda.org/robostack-staging/osx-arm64/ros-humble-gazebo-ros-pkgs-3.7.0-py311hbfa132e_5.tar.bz2
+  sha256: 040e7635c62e1c9fcee9715e7a66870ae75c125474d48b58c3a8d31b15145f4c
+  md5: 52b21dc5c357930655e3f2b5f08cdedd
+  depends:
+  - libcxx >=16
+  - numpy >=1.23.5,<2.0a0
+  - python
+  - python_abi 3.11.* *_cp311
+  - ros-humble-gazebo-dev
+  - ros-humble-gazebo-msgs
+  - ros-humble-gazebo-plugins
+  - ros-humble-gazebo-ros
+  - ros-humble-ros-workspace
+  - ros2-distro-mutex 0.5.*
+  - ros2-distro-mutex 0.5.* humble
+  arch: arm64
+  platform: osx
+  license: BSD-3-Clause
+  size: 14434
+  timestamp: 1708038502603
 - kind: conda
   name: ros-humble-geometry-msgs
   version: 4.2.3
